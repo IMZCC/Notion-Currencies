@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv(dotenv_path=".env", override=False)
 
 # 初始化Notion客户端
-notion = Client(auth=os.environ.get("NOTION_INTEGRATION_TOKEN"))
+notion = Client(auth=os.getenv("NOTION_INTEGRATION_TOKEN"))
 
 # 指定数据库ID
 database_id = os.getenv("NOTION_DATABASE_ID")
