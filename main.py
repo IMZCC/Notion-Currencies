@@ -3,7 +3,7 @@ import requests
 import os
 from dotenv import load_dotenv
 
-load_dotenv(dotenv_path=".env", override=True)
+load_dotenv(dotenv_path=".env", override=False)
 
 # 初始化Notion客户端
 notion = Client(auth=os.environ.get("NOTION_INTEGRATION_TOKEN"))
