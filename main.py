@@ -26,7 +26,7 @@ def update_notion_database_entry(page_id, properties):
 # 主函数
 def main():
 
-    response = requests.get("https://api.exchangerate-api.com/v4/latest/CNY")
+    response = requests.get("https://open.exchangerate-api.com/v6/latest/CNY")
     exchangerate_json = response.json()
     print(exchangerate_json)
 
